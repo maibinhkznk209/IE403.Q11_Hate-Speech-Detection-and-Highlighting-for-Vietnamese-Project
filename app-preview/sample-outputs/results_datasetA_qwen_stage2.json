@@ -1,0 +1,58 @@
+{
+  "Qwen": {
+    "model": "Qwen",
+    "dataset": "A_test_final",
+    "subset_accuracy": 0.5644444444444444,
+    "hamming_loss": 0.0852020202020202,
+    "f1_samples": 0.6344708994708995,
+    "f1_macro": 0.3034846698748015,
+    "f1_micro": 0.6025912838633686,
+    "precision_samples": 0.6515277777777778,
+    "precision_macro": 0.4066618178202664,
+    "precision_micro": 0.6347394540942928,
+    "recall_samples": 0.6343518518518518,
+    "recall_macro": 0.2842495414501169,
+    "recall_micro": 0.5735426008968609,
+    "f1_per_label": {
+      "normal": 0.7984453081621322,
+      "individuals#offensive": 0.2014388489208633,
+      "individuals#hate": 0.6165670367207515,
+      "groups#offensive": 0.07881773399014778,
+      "groups#hate": 0.5343511450381679,
+      "religion#offensive": 0.0,
+      "religion#hate": 0.0,
+      "race#offensive": 0.22641509433962262,
+      "race#hate": 0.28169014084507044,
+      "politics#offensive": 0.060606060606060615,
+      "politics#hate": 0.5399999999999999
+    },
+    "precision_per_label": {
+      "normal": 0.7689839572192514,
+      "individuals#offensive": 0.45161290322580644,
+      "individuals#hate": 0.5048951048951049,
+      "groups#offensive": 0.4444444444444444,
+      "groups#hate": 0.6363636363636364,
+      "religion#offensive": 0.0,
+      "religion#hate": 0.0,
+      "race#offensive": 0.3157894736842105,
+      "race#hate": 0.625,
+      "politics#offensive": 0.08333333333333333,
+      "politics#hate": 0.6428571428571429
+    },
+    "recall_per_label": {
+      "normal": 0.8302540415704388,
+      "individuals#offensive": 0.12962962962962962,
+      "individuals#hate": 0.7916666666666666,
+      "groups#offensive": 0.043243243243243246,
+      "groups#hate": 0.4605263157894737,
+      "religion#offensive": 0.0,
+      "religion#hate": 0.0,
+      "race#offensive": 0.17647058823529413,
+      "race#hate": 0.18181818181818182,
+      "politics#offensive": 0.047619047619047616,
+      "politics#hate": 0.46551724137931033
+    },
+    "timestamp": "2025-12-17T14:39:50.168412",
+    "n_samples": 1800
+  }
+}
