@@ -70,10 +70,24 @@ IE403.Q11_Hate-Speech-Detection-and-Highlighting-for-Vietnamese-Project/
 │   ├── raw/                        # Original ViTHSD .xlsx files
 │   └── processed/                  # dataset_rationale.json for training
 │
-├── research/                       # Research and Model Development
-│   ├── notebooks/                  # Training notebooks (Qwen, PhoBERT, Flan-T5)
-│   ├── prompts/                    # Evolution of Prompt Engineering (v1, v2, Final)
-│   └── src/                        # Modular scripts (config.py, models.py, eval.py)
+├── research/
+│   ├── notebooks/                      # Experiments and training steps
+│   │   ├── base-phobert.ipynb          # Baseline 1: Training and evaluating PhoBERT model
+│   │   ├── base-flant5.ipynb           # Baseline 2: Text-to-text approach using Flan-T5
+│   │   ├── base-qwen.ipynb             # Baseline 3: Performance of Qwen2.5 (Zero-shot/Vanilla)
+│   │   ├── qwen_rationale.ipynb        # Main: Fine-tuning Qwen with rationale (The HARE model)
+│   │   └── test_prompts.ipynb          # Prompt Engineering: Testing different prompt versions
+│   │
+│   ├── src/                            # Modular source code for research
+│   │   ├── config.py                   # Centralized configuration (hyperparameters, paths)
+│   │   ├── data_preparation.py         # Pipeline to convert Excel/JSON to training format
+│   │   ├── models.py                   # Model architecture and LoRA/QLoRA configuration
+│   │   └── evaluation.py               # Custom metrics (F1-score, span-level evaluation)
+│   │
+│   └── prompts/                        # Prompt versioning (v1, v2, final)
+│       ├── v1_initial/
+│       ├── v2_refined/
+│       └── v3_final/                   # Best prompts used in the final system
 │
 ├── demo/                           # Full Application (Stored on OneDrive)
 │   ├── frontend/                   # React + Vite source code
