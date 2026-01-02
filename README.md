@@ -139,7 +139,7 @@ source .venv/bin/activate      # Linux / Mac
 ```
 ### 3. Install dependencies
 ```bash
-ppip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Setup Demo (External Storage)
@@ -150,6 +150,12 @@ Due to the model weight size (~1.7GB), the `demo/` folder must be downloaded fro
 --- 
 
 ## Usage
+### 0. Important Notes
+- **Notebook Environment (Kaggle):** All training notebooks in `research/notebooks/` were originally developed and executed on **Kaggle** to leverage its GPU resources (P100/T4). If you are running these locally or on Google Colab, ensure you have sufficient VRAM (at least 16GB recommended for Qwen2.5-7B fine-tuning).
+- **Path Configuration:** Due to the reorganization of this repository for academic submission, the file paths within the `.ipynb` files may not match the current folder structure.
+  - **Default Path in Notebooks:** Usually points to `/kaggle/input/...` or the previous local structure.
+  - **Required Action:** If you wish to re-train or run inference, please update the `DATA_PATH` or file loading cells to point to: `../../dataset/processed/dataset_rationale.json`
+- **Demo Folder:** Remember that the `demo/` folder is excluded from Git via `.gitignore.` You must manually download it from the provided OneDrive link and place it in the root directory for the application to function
 ### 1. Training & Research
 Navigate to the research folder to reproduce experiments:
 ```bash
