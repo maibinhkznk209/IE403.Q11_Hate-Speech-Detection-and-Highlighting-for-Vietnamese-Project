@@ -211,7 +211,17 @@ The table below compares HARE (Qwen2.5-7B) with baseline models.
 
 > **Key Finding:**  The inclusion of rationales and CoT reasoning improved the F1-score by nearly 10% compared to the best traditional transformer baseline.
 
+### Experimental Outputs
 
+The system provides detailed analysis for each input, as seen in our experimental logs (`results_datasetA_qwen_stage2.json`).
+
+#### Sample Analysis Case:
+- **Input Text:** "Thằng này nhìn mặt hãm tài quá, cút đi cho rảnh nợ."
+- **Predicted Label:** `Censored` (Hate Speech)
+- **Extracted Rationale:** "Sử dụng từ ngữ xúc phạm ngoại hình ('hãm tài') và thái độ xua đuổi, miệt thị ('cút đi', 'rảnh nợ')."
+- **Implied Statement:** "Người nói đang công kích cá nhân và thể hiện sự căm ghét đối với đối tượng được nhắc đến."
+
+> **Note:** The full experimental results on Dataset A (Stage 2) can be found in `demo/output/results_datasetA_qwen_stage2.json`.
 ---
 
 ### Comparison Summary
