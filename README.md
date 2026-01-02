@@ -93,6 +93,22 @@ IE403.Q11_Hate-Speech-Detection-and-Highlighting-for-Vietnamese-Project/
 │       ├── v2_refined/
 │       └── v3_final/                   # Best prompts used in the final system
 │
+├── app-preview/
+│   ├── frontend-snippet/
+│   │   └── index.html           # UI layout template for the detection dashboard
+│   │
+│   ├── backend-logic/           # Core FastAPI implementation
+│   │   ├── main.py              # API entry point, routing, and YouTube integration
+│   │   ├── model.py             # LLM inference engine & rationale parsing logic
+│   │   ├── highlight.py         # Advanced algorithm for toxic span mapping (NFC Normalized)
+│   │   ├── schemas.py           # Pydantic data models for request/response validation
+│   │   ├── youtube.py           # Integration with YouTube Data API v3
+│   │   ├── config.py            # Environment settings and model hyperparameters
+│   │   └── models.py            # (From Research) Base architecture definitions
+│   │
+│   └── sample-outputs/          
+│       ├── results_datasetA_qwen_stage2.json  # Comprehensive test results (Labels + Rationales)
+│       └── __huggingface_repos__.json         # Metadata for Hugging Face model integration
 ├── demo/                           # Full Application (Stored on OneDrive)
 │   ├── frontend/                   # React + Vite source code
 │   ├── backend/                    # FastAPI server code
