@@ -1,0 +1,29 @@
+# --- Core Deep Learning & LLM ---
+torch>=2.0.0
+transformers>=4.34.0
+peft>=0.5.0
+bitsandbytes>=0.41.1
+accelerate>=0.23.0
+trl>=0.7.2
+sentencepiece
+
+# --- Data Processing ---
+pandas
+numpy
+scikit-learn
+datasets
+openpyxl
+
+# --- Backend (FastAPI) ---
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+
+# --- Notebook & Utilities ---
+ipykernel
+tqdm
+matplotlib
+seaborn
+requests
